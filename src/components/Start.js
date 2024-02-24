@@ -5,9 +5,12 @@ const Start = (props) => {
 
     const [btnDis, setBtnDis] = useState(false)
 
+    const startClick = () => {
+        setBtnDis(true)
+    }
     return (
         <div>
-            
+            <button onClick={ () => startClick() }>시작하기</button>
         </div>
     );
 };
